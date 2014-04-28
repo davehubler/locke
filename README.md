@@ -16,6 +16,8 @@
 * Follow up form (to contact leads directly from Kwote)
 * Billing page
 * Cancellation Page
+* Sign Up Page
+* Sign In Page
 
 ## Companies
 * Agent Management Page
