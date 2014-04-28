@@ -8,8 +8,8 @@ development:
   encoding: utf8
   database: kwote_dev
   username: root
-  password: thunder
-  host: 127.0.0.1
+  password: 
+  host: localhost
   port: 3306
 
 # Warning: The database defined as "test" will be erased and
