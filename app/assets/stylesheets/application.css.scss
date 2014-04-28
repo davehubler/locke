@@ -14,6 +14,10 @@ $navbar-default-color: #F8F8F8;
 
 @import 'bootstrap';
 
+h1, h2, h3, h4, h5, h6, p, blockquote, span, ul, ol, table{
+	font-family: 'Open Sans', 'sans-serif';
+}
+
 body{
 	padding-top: 70px;
 

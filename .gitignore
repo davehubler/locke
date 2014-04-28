@@ -16,3 +16,7 @@
 /tmp
 /._.DS_STORE
 /.vagrant
+
+.vagrant/machines/default/virtualbox/id
+.vagrant/machines/default/virtualbox/action_provision
+*.DS_Store
