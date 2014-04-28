@@ -1,1 +1,15 @@
+// Variable Overrides
+
+$font-size-base: 16px;
+$line-height-base: 1.75;
+
 @import 'bootstrap';
+
+body{
+	padding-top: 70px;
+}
+
+.navbar-nav > li{
+	padding-right: 2em;
+	padding-top: 10px;
+}
