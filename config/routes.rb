@@ -1,4 +1,5 @@
 Kwote::Application.routes.draw do
+  resources :home
   devise_for :users
   resources :leads
   root 'leads#index'

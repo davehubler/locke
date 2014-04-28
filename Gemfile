@@ -39,6 +39,7 @@ gem 'table_print'
 gem 'bootstrap-sass'
 gem 'geokit-rails'
 gem 'mysql2'
+gem 'prismic.io'
 
 
 
