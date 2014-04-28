@@ -2,6 +2,10 @@
 
 $font-size-base: 16px;
 $line-height-base: 1.75;
+$brand-primary: #1D91CF;
+$navbar-default-bg: #1D91CF;
+$navbar-default-link-color: #F8F8F8;
+$navbar-default-color: #F8F8F8;
 
 @import 'bootstrap';
 
@@ -11,5 +15,4 @@ body{
 
 .navbar-nav > li{
 	padding-right: 2em;
-	padding-top: 10px;
 }
