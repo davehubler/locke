@@ -11,11 +11,11 @@
     </div>
   <% end %>
 
-  <%= f.input :fname %>
-  <%= f.input :lname %>
+  <%= f.input :fname, :label => "First Name" %>
+  <%= f.input :lname, :label => "Last Name" %>
   <%= f.input :phone %>
   <%= f.input :email %>
-  <%= f.input :zipcode %>
+  <%= f.input :zipcode, :label => "Zip Code" %>
   <%= f.input :gender %>
   <%= f.input :smoker, as: :radio_buttons %>
   <div class="actions">
