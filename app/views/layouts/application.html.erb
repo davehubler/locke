@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Kwote</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -23,11 +23,7 @@
 		</nav>
 	</div>
 
-<div class="container">
-	<div class="col-sm-12">
-		<%= yield %>
-	</div>
-</div>
+	<%= yield %>
 
 </body>
 </html>

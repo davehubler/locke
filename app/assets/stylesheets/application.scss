@@ -1,0 +1,65 @@
+// Variable Overrides
+
+$font-size-base: 16px;
+$line-height-base: 1.75;
+$brand-primary: #1D91CF;
+$navbar-default-bg: #1D91CF;
+$navbar-default-link-color: #F8F8F8;
+$navbar-default-color: #F8F8F8;
+
+// IMPORTS
+
+@import 'bootstrap';
+// @import 'home';
+
+///////////////////////////////////////////////////////
+
+.center{
+	text-align: center;
+	margin: auto;
+}
+
+.large{
+	font-size: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, span, ul, ol, table{
+	font-family: 'Open Sans', 'sans-serif';
+}
+
+body{
+	padding-top: 70px;
+
+	img{
+		max-width: 100%;
+	}
+}
+
+.navbar-nav > li{
+	padding-right: 1em;
+}
+
+#main-image{
+	padding: 2em 0 5em 0;
+}
+
+h1.tagline{
+	font-size: 2.5rem; 
+	font-weight: 700;
+	text-shadow: 0 2px 0 rgba(0,0,0,.15);
+}
+
+section#intro{
+	background: image-url("cactus.jpg") no-repeat;
+	background-size: cover;
+	box-shadow: inset 0 -2px 4px rgba(0,0,0,.25);
+	margin-top: -93px;
+
+	.overlay{
+		width: 100%;
+		height: 100%;
+		background: rgba(255,255,255,.65);
+		padding: 4em 0px 5.5em 0;
+	}
+
+}
