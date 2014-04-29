@@ -36,7 +36,7 @@
           <%= f.input :city, :placeholder => "Oceanic" %>
         </div>
         <div class="col-lg-6">
-          <p>State</p>
+          <%= f.input :state collection:  => c.states %>
         </div>
       </div>
     </div>
