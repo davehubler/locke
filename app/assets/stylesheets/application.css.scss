@@ -8,19 +8,16 @@ $navbar-default-link-color: #F8F8F8;
 $navbar-default-color: #F8F8F8;
 
 // IMPORTS
-
 @import 'bootstrap';
-// @import 'home';
+@import 'bootstrap-switch.css.scss';
 
-///////////////////////////////////////////////////////
+.large{
+	font-size: 1.2em;
+}
 
 .center{
 	text-align: center;
 	margin: auto;
-}
-
-.large{
-	font-size: 1.2em;
 }
 
 h1, h2, h3, h4, h5, h6, p, blockquote, span, ul, ol, table{

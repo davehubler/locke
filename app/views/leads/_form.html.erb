@@ -10,33 +10,46 @@
       </ul>
     </div>
   <% end %>
+  
+  <div class="row">
+    <div class="col-lg-6">
+      <%= f.input :fname, :label => "First Name", :placeholder => "Kate" %>
+    </div>
+    <div class="col-lg-6">
+      <%= f.input :lname, :label => "Last Name", :placeholder => "Austen" %>
+    </div>
+  </div>
 
-  <div class="col-lg-6">
-    <%= f.input :fname, :label => "First Name", :placeholder => "Kate" %>
-  </div>
-  <div class="col-lg-6">
-    <%= f.input :lname, :label => "Last Name", :placeholder => "Austen" %>
-  </div>
-  <div class="col-lg-6">
-    <%= f.input :phone, :label => "Phone Number", :placeholder => "555-481-5162" %>
-  </div>
-  <div class="col-lg-6">
-    <%= f.input :email, :label => "Email Address", :placeholder => "freckles@kwote.com" %>
-  </div>
-  <div class="col-lg-6">
-    <div class="col-lg-3">
-      <%= f.input :city, :placeholder => "Oceanic" %>
+  <div class="row">
+    <div class="col-lg-6">
+      <%= f.input :phone, :label => "Phone Number", :placeholder => "555-481-5162" %>
     </div>
-    <div class="col-lg-3">
-      <p>State</p>
+    <div class="col-lg-6">
+      <%= f.input :email, :label => "Email Address", :placeholder => "freckles@kwote.com" %>
     </div>
   </div>
-  <div class="col-lg-6">
-    <div class="col-lg-3">
-      <%= f.input :gender %>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-6">
+          <%= f.input :city, :placeholder => "Oceanic" %>
+        </div>
+        <div class="col-lg-6">
+          <p>State</p>
+        </div>
+      </div>
     </div>
-    <div class="col-lg-3">
-      <%= f.input :smoker, as: :radio_buttons %>
+
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-6">
+          <%= f.input :gender %>
+        </div>
+        <div class="col-lg-6">
+          <%= f.input :smoker, as: :radio_buttons, :name => "smoker", :id => " simple-form-radio" %>
+        </div>
+      </div>
     </div>
   </div>
   <div class="col-lg-12">

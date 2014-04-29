@@ -25,5 +25,11 @@
 
 	<%= yield %>
 
+	<script type="text/javascript">
+		$('.control-group.radio_buttons').children('.controls').toggleClass('btn-group');
+		$('.control-group.radio_buttons').children('.controls').attr('data-toggle', 'buttons');
+		$('.control-group.radio_buttons').children('.controls').children('label.radio').toggleClass('radio btn btn-primary');
+		$('.btn').button('toggle')
+	</script>
 </body>
 </html>
