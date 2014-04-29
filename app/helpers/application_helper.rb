@@ -10,4 +10,8 @@ module ApplicationHelper
     HTML
     html.html_safe
   end
+
+  def only_us_and_canada
+    Carmen::Country.all.select{|c| %w{US CA}.include?(c.code)}
+  end
 end
