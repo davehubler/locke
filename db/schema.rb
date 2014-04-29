@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 20140428053827) do
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.string   "confirmation_token"
+    t.integer  "sign_in_count",          :default => 0
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
@@ -57,6 +58,8 @@ ActiveRecord::Schema.define(version: 20140428053827) do
     t.datetime "locked_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "customer_id"            :null => false
+    t.string   "last_4_digits"          :null => false
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
