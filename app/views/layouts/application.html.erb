@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>Kwote</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -22,11 +23,13 @@
 		</nav>
 	</div>
 
-<div class="container">
-	<div class="col-sm-12">
-		<%= yield %>
-	</div>
-</div>
+	<%= yield %>
 
+	<script type="text/javascript">
+		$('.control-group.radio_buttons').children('.controls').toggleClass('btn-group');
+		$('.control-group.radio_buttons').children('.controls').attr('data-toggle', 'buttons');
+		$('.control-group.radio_buttons').children('.controls').children('label.radio').toggleClass('radio btn btn-primary');
+		$('.btn').button('toggle')
+	</script>
 </body>
 </html>
