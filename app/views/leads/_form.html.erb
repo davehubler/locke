@@ -1,4 +1,4 @@
-<%= simple_form_for(@lead, :defaults => { :wrapper_html => {:class => 'form-group'}, :input_html => { :class => 'form-control' } }) do |f| %>
+<%= simple_form_for(@lead, :defaults => { :wrapper_html => {:class => 'form-group'}, :input_html => { :class => 'form-control' } }, :remote => true) do |f| %>
   <% if @lead.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@lead.errors.count, "error") %> prohibited this lead from being saved:</h2>
@@ -36,7 +36,12 @@
           <%= f.input :city, :placeholder => "Oceanic" %>
         </div>
         <div class="col-lg-6">
+<<<<<<< HEAD
           <%= f.input :state,  :collection => ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"] %>
+=======
+          <p>State</p>
+          <%= f.input :state, :placeholder => "Mexico" %>
+>>>>>>> FETCH_HEAD
         </div>
       </div>
     </div>
