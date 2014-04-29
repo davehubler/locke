@@ -24,6 +24,7 @@ gem 'stripe_event'
 gem 'bootstrap-sass'
 gem 'jbuilder', '~> 1.2'
 gem 'capistrano', '~> 3.2.0'
+gem 'carmen-rails', '~> 1.0.0'
 
 group :development, :test do
   gem 'launchy'
